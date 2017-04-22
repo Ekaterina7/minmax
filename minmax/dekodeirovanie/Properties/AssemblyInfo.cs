@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("minmax")]
+[assembly: AssemblyTitle("dekodeirovanie")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("minmax")]
+[assembly: AssemblyProduct("dekodeirovanie")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("c86dde8a-69fb-4912-84e7-2557d90f499f")]
+[assembly: Guid("eab0fede-f39a-4c35-b1e1-ce7d8f1594f4")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //

@@ -12,7 +12,7 @@ namespace ConsoleApplication7
         static void Main(string[] args)
         {
 
-            string text = System.IO.File.ReadAllText(@"C:\Users\student\Desktop\катя.txt");
+            string text = System.IO.File.ReadAllText(@"C:\Users\Екатерина\Desktop\Канада.txt");
             
            
 
@@ -26,7 +26,7 @@ namespace ConsoleApplication7
 
 
             Console.WriteLine("Количество слов: " + textMass.Length);
-            System.IO.File.WriteAllText(@"C:\Users\student\Desktop\WriteText.txt", "Количество слов:" + textMass.Length);
+            System.IO.File.WriteAllText(@"C:\Users\Екатерина\Desktop\Канада.txt", "Количество слов:" + textMass.Length);
 
             Console.WriteLine("minimum lenght word = "+ MinimumWordInText(textMass));
             Console.WriteLine("maximum lenght word = " + MaximumWordInText(textMass));
