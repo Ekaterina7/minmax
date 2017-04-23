@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "minmax", "minmax\minmax.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dekodeirovanie", "dekodeirovanie\dekodeirovanie.csproj", "{EAB0FEDE-F39A-4C35-B1E1-CE7D8F1594F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polindrome", "polindrome\polindrome.csproj", "{088B7250-B952-4609-9693-0AA768132EDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EAB0FEDE-F39A-4C35-B1E1-CE7D8F1594F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAB0FEDE-F39A-4C35-B1E1-CE7D8F1594F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAB0FEDE-F39A-4C35-B1E1-CE7D8F1594F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088B7250-B952-4609-9693-0AA768132EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088B7250-B952-4609-9693-0AA768132EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088B7250-B952-4609-9693-0AA768132EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088B7250-B952-4609-9693-0AA768132EDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
