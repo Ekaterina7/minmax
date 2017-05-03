@@ -10,8 +10,8 @@ namespace dekodeirovanie
     {
         static void Main(string[] args)
         {
-
-            string text = System.IO.File.ReadAllText(@"C:\Users\Екатерина\Desktop\Канада.txt");
+            
+            string text = System.IO.File.ReadAllText(@"C:\Users\student\Desktop\катя.txt");
             char[] textchar = text.ToCharArray();
             Random gen = new Random();
 

@@ -10,7 +10,7 @@ namespace polindrome
     {
         static void Main(string[] args)
         {
-            string text = System.IO.File.ReadAllText(@"C:\Users\Екатерина\Desktop\Канада.txt");
+            string text = System.IO.File.ReadAllText(@"C:\\Users\student\Desktop\катя.txt");
             string[] textMass = text.Split(new char[] { ' ', ';', '-', '_', '@', '>', '<', '.' });
 
 
@@ -23,7 +23,7 @@ namespace polindrome
                 string end = "";
                 string endnaoborot = "";
                 countpluking = (int)Math.Ceiling((double)textMass[i].Length / 2);
-                
+                if (textMass[i].Length>1)
                 if ((textMass[i].Trim() != ""))
                 {
                     start = textMass[i].Remove(countpluking);
