@@ -10,26 +10,26 @@ namespace _20task
     {
         static void Main(string[] args)
         {
-            string text = System.IO.File.ReadAllText(@"C:\\Users\student\Desktop\катя.txt");
+            string text = System.IO.File.ReadAllText(@"C:\Users\Екатерина\Desktop\катя.txt");
             
             
             string[] textstolb = text.Split(new char[] { ';' });
-            for (int i = 0; i < textstolb.Length-1; i+=8)
+            for (int i = 0; i < textstolb.Length-1; i+=6)
             {
-                string[] ss = textstolb[i + 5].Split(new char[] { '.' });
+                string[] ss = textstolb[i + 4].Split(new char[] { '.' });
                 
-                if (textstolb[i+3]=="ж")
+                if (textstolb[i+2]=="ж")
                 {
                     if (Convert.ToInt32(ss[2])<=1957)
                     {
-                        Console.WriteLine(textstolb[i]);
+                        Console.WriteLine(textstolb[i]+" "+textstolb[i+1]+ " " + textstolb[i+2]+ " " + textstolb[i+3]+ " " + textstolb[i+4]+ " " + textstolb[i+5]);
                     }
                 }
                 else
                 {
                     if (Convert.ToInt32(ss[2]) <= 1952)
                     {
-                        Console.WriteLine(textstolb[i]);
+                        Console.WriteLine(textstolb[i] + " " + textstolb[i + 1] + " " + textstolb[i + 2] + " " + textstolb[i + 3] + " " + textstolb[i + 4] + " " + textstolb[i + 5]);
                     }  
                 }
             //    if (textstolb[i+3]=="ж")
