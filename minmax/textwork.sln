@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "minmax", "minmax\minmax.csproj", "{84CA546C-4B26-422C-8299-E87217E1BEF7}"
 EndProject
@@ -34,6 +34,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "struct task 21", "struct task 21\struct task 21.csproj", "{F7FF598D-1E59-4813-BE3F-FCAF88FFBA84}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mas 7", "mas 7\mas 7.csproj", "{D026E9B9-E6E3-4A8B-8341-268BCDB038F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mas mas 1", "mas mas 1\mas mas 1.csproj", "{54609E7F-119B-42F9-BD85-5407C08C14C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{D026E9B9-E6E3-4A8B-8341-268BCDB038F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D026E9B9-E6E3-4A8B-8341-268BCDB038F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D026E9B9-E6E3-4A8B-8341-268BCDB038F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54609E7F-119B-42F9-BD85-5407C08C14C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54609E7F-119B-42F9-BD85-5407C08C14C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54609E7F-119B-42F9-BD85-5407C08C14C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54609E7F-119B-42F9-BD85-5407C08C14C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
