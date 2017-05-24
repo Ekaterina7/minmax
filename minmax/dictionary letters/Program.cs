@@ -10,7 +10,7 @@ namespace dictionary_letters
     {
         static void Main(string[] args)
         {
-            string text = System.IO.File.ReadAllText(@"C:\Users\Екатерина\Desktop\средний.txt");
+            string text = System.IO.File.ReadAllText(@"C:\Users\student\Desktop\Sredniy.txt");
             var dictionary = new Dictionary<string, int>();
             for (int i = 0; i < text.Length; i++)
             {

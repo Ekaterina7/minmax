@@ -10,28 +10,28 @@ namespace mas_mas_task_11
     {
         static void Main(string[] args)
         {
-            
-            string[] text = System.IO.File.ReadAllLines(@"C:\Users\Екатерина\Desktop\mas.txt");
-          System.IO.File.Delete(@"C:\Users\Екатерина\Desktop\masresult.txt");
+
+            string[] text = System.IO.File.ReadAllLines(@"C:\Users\student\Desktop\мас.txt");
+            System.IO.File.Delete(@"C:\Users\student\Desktop\masresult.txt");
             string[][] textmas = new string[text.Length][];
             for (int i = 0; i < text.Length; i++)
-                textmas[i] = new string[3];
-            for (int i = 0; i < textmas[0].Length; i++)
+                textmas[i] = new string[4];
+            for (int i = 0; i < textmas[0].Length-1; i++)
                 textmas[i] = text[i].Split(';');
             for (int i = 0; i < textmas.Length; i++)
             {
                 for (int j = 0; j < textmas[i].Length; j++)
                 {
                     Console.Write(textmas[i][j] + "\t");
-                    System.IO.File.AppendAllText(@"C:\Users\Екатерина\Desktop\masresult.txt", textmas[i][j] + "\t");
+                    System.IO.File.AppendAllText(@"C:\Users\student\Desktop\masresult.txt", textmas[i][j] + "\t");
                 }
-                System.IO.File.AppendAllText(@"C:\Users\Екатерина\Desktop\masresult.txt","\r\n");
+                System.IO.File.AppendAllText(@"C:\Users\student\Desktop\masresult.txt","\r\n");
                 Console.WriteLine();
             }
             ToGetCountEvenNumber(textmas);
             ToGetCountOddNumber(textmas);
             
-            System.IO.File.AppendAllText(@"C:\Users\Екатерина\Desktop\masresult.txt","even=  "+ ToGetCountEvenNumber(textmas)
+            System.IO.File.AppendAllText(@"C:\Users\student\Desktop\masresult.txt","even=  "+ ToGetCountEvenNumber(textmas)
              + "\r\n" + "odd=  " + ToGetCountOddNumber(textmas));
             
         }

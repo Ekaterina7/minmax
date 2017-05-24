@@ -10,7 +10,7 @@ namespace dictionary_words
     {
         static void Main(string[] args)
         {
-            string text = System.IO.File.ReadAllText(@"C:\Users\Екатерина\Desktop\средний.txt");
+            string text = System.IO.File.ReadAllText(@"C:\Users\student\Desktop\Sredniy.txt");
             string[] textmas = text.Split(' ', '-', '.',',');
 
             var dictionary = new Dictionary<string, int>();
