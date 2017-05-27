@@ -11,66 +11,91 @@ namespace string_mas
     {
         static void Main(string[] args)
         {
-            string text = File.ReadAllText(@"C:\Users\student\Desktop\string.txt");
-            string[] textmas = text.Split(';');
+            string[] textmas = File.ReadAllLines(@"C:\Users\Екатерина\Desktop\алфавит.txt");
+           
             for (int i = 0; i < textmas.Length; i++)
             {
                 Console.WriteLine(textmas[i]);
             }
             Console.WriteLine();
-            //string[] tmp = new string[1];
-            //tmp[0] = textmas[i];
-            //textmas[i] = textmas[i + 1];
-            //textmas[i + 1] = tmp[0];
-
-            for (int i = 0; i < textmas.Length-1; i++)
+            int count = 0;
+            while (count < 3)
             {
-                string a = textmas[i];
-                string b = textmas[i + 1];
-                if (a.Length==b.Length)
+                for (int i = 0; i < textmas.Length - 1; i++)
                 {
-                    for (int j = 0; j < a.Length; j++)
+                    string a = textmas[i];
+                    string b = textmas[i + 1];
+                    if (a.Length == b.Length)
                     {
-                        if (a[j]>b[j])
+                        for (int j = 0; j < a.Length; j++)
                         {
-                            string[] tmp = new string[1];
-                            tmp[0] = textmas[i];
-                            textmas[i] = textmas[i + 1];
-                            textmas[i + 1] = tmp[0];
+                            if (a[j] > b[j])
+                            {
+                                string tmp = "";
+                                tmp = textmas[i];
+                                textmas[i] = textmas[i + 1];
+                                textmas[i + 1] = tmp;
+                            }
+                            else if (a[j] < b[j])
+                            {
+                                textmas[i + 1] = textmas[i + 1];
+                                textmas[i] = textmas[i];
+                                break;
+                            }
+                            else
+                                continue;
                         }
-                    }
 
-                }
-                else if (a.Length>b.Length)
-                {
-                    for (int J = 0; J < b.Length; J++)
+                    }
+                    else if (a.Length > b.Length)
                     {
-                        if (a[J]>b[J])
+                        for (int J = 0; J < b.Length; J++)
                         {
-                            string[] tmp = new string[1];
-                            tmp[0] = textmas[i];
-                            textmas[i] = textmas[i + 1];
-                            textmas[i + 1] = tmp[0];
-                            break;
+                            if (a[J] > b[J])
+                            {
+                                string tmp = "";
+                                tmp = textmas[i];
+                                textmas[i] = textmas[i + 1];
+                                textmas[i + 1] = tmp;
+                                break;
+                            }
+                            else if (a[J] < b[J])
+                            {
+                                textmas[i + 1] = textmas[i + 1];
+                                textmas[i] = textmas[i];
+                                break;
+                            }
+                            else
+                                continue;
+                        }
+                    }
+                    else
+                    {
+                        for (int J = 0; J < a.Length; J++)
+                        {
+                            if (a[J] > b[J])
+                            {
+                                string tmp = "";
+                                tmp = textmas[i];
+                                textmas[i] = textmas[i + 1];
+                                textmas[i + 1] = tmp;
+                                break;
+                            }
+                            else if (a[J] < b[J])
+                            {
+
+
+                                textmas[i + 1] = textmas[i + 1];
+                                textmas[i] = textmas[i];
+                                break;
+                            }
+                            else
+                                continue;
                         }
                     }
                 }
-                else
-                {
-                    for (int J = 0; J < a.Length; J++)
-                    {
-                        if (a[J] > b[J])
-                        {
-                            string[] tmp = new string[1];
-                            tmp[0] = textmas[i];
-                            textmas[i] = textmas[i + 1];
-                            textmas[i + 1] = tmp[0];
-                            break;
-                        }
-                    }
-                }
+                count++;
             }
-
                 
             
             for (int i = 0; i < textmas.Length; i++)
