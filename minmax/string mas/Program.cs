@@ -19,7 +19,7 @@ namespace string_mas
             }
             Console.WriteLine();
             int count = 0;
-            while (count < 3)
+            while (count < textmas.Length)
             {
                 for (int i = 0; i < textmas.Length - 1; i++)
                 {

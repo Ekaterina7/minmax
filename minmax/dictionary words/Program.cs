@@ -10,7 +10,7 @@ namespace dictionary_words
     {
         static void Main(string[] args)
         {
-            string text = System.IO.File.ReadAllText(@"C:\Users\student\Desktop\Sredniy.txt");
+            string text = System.IO.File.ReadAllText(@"C:\Users\Екатерина\Desktop\средний.txt");
             string[] textmas = text.Split(' ', '-', '.',',');
 
             var dictionary = new Dictionary<string, int>();
@@ -27,7 +27,19 @@ namespace dictionary_words
             {
                 Console.WriteLine(item.Key + "\t" + item.Value);
             }
+            Console.WriteLine();
+            Console.WriteLine("Сщртировка по значению:");
+            foreach (var pair in dictionary.OrderBy(pair => pair.Value))
+            {
+                Console.WriteLine("{0} - {1}", pair.Key, pair.Value);
+            }
+            Console.WriteLine("Сортировка по алфавиту ");
+            dictionary = dictionary.OrderBy(k => k.Key).ToDictionary(process => process.Key, process => process.Value);
 
+            foreach (var pair in dictionary)
+            {
+                Console.WriteLine("{0}", pair.Key);
+            }
         }
     }
 }
