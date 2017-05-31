@@ -29,7 +29,9 @@ namespace datatime
 
 
             }
-            Console.WriteLine("Самый старший "+ textstolb[it] + " " + textstolb[it + 1] + " " + textstolb[it + 2] + " " + textstolb[it + 3] + " " + textstolb[it + 4] + " " + textstolb[it + 5]);
+            Console.WriteLine("Самый старший "+ textstolb[it] + " " +
+                textstolb[it + 1] + " " + textstolb[it + 2] + " " +
+                textstolb[it + 3] + " " + textstolb[it + 4] + " " + textstolb[it + 5]);
 
 
 

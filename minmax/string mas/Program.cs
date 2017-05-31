@@ -11,8 +11,8 @@ namespace string_mas
     {
         static void Main(string[] args)
         {
-            string[] textmas = File.ReadAllLines(@"C:\Users\Екатерина\Desktop\алфавит.txt");
-           
+            string[] textmas = File.ReadAllLines(@"C:\Users\student\Desktop\string.txt");
+
             for (int i = 0; i < textmas.Length; i++)
             {
                 Console.WriteLine(textmas[i]);
@@ -25,9 +25,9 @@ namespace string_mas
                 {
                     string a = textmas[i];
                     string b = textmas[i + 1];
-                    if (a.Length == b.Length)
+
                     {
-                        for (int j = 0; j < a.Length; j++)
+                        for (int j = 0; j < (a.Length >= b.Length ? b.Length : a.Length); j++)
                         {
                             if (a[j] > b[j])
                             {
@@ -35,56 +35,10 @@ namespace string_mas
                                 tmp = textmas[i];
                                 textmas[i] = textmas[i + 1];
                                 textmas[i + 1] = tmp;
+                                break;
                             }
                             else if (a[j] < b[j])
                             {
-                                textmas[i + 1] = textmas[i + 1];
-                                textmas[i] = textmas[i];
-                                break;
-                            }
-                            else
-                                continue;
-                        }
-
-                    }
-                    else if (a.Length > b.Length)
-                    {
-                        for (int J = 0; J < b.Length; J++)
-                        {
-                            if (a[J] > b[J])
-                            {
-                                string tmp = "";
-                                tmp = textmas[i];
-                                textmas[i] = textmas[i + 1];
-                                textmas[i + 1] = tmp;
-                                break;
-                            }
-                            else if (a[J] < b[J])
-                            {
-                                textmas[i + 1] = textmas[i + 1];
-                                textmas[i] = textmas[i];
-                                break;
-                            }
-                            else
-                                continue;
-                        }
-                    }
-                    else
-                    {
-                        for (int J = 0; J < a.Length; J++)
-                        {
-                            if (a[J] > b[J])
-                            {
-                                string tmp = "";
-                                tmp = textmas[i];
-                                textmas[i] = textmas[i + 1];
-                                textmas[i + 1] = tmp;
-                                break;
-                            }
-                            else if (a[J] < b[J])
-                            {
-
-
                                 textmas[i + 1] = textmas[i + 1];
                                 textmas[i] = textmas[i];
                                 break;
@@ -96,8 +50,6 @@ namespace string_mas
                 }
                 count++;
             }
-                
-            
             for (int i = 0; i < textmas.Length; i++)
             {
                 Console.WriteLine(textmas[i]);
@@ -105,13 +57,6 @@ namespace string_mas
             Console.WriteLine();
 
 
-
         }
-       
-
-
-
-
-
     }
 }

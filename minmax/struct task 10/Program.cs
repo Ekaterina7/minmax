@@ -33,7 +33,8 @@ namespace struct_task_10
             {
                 if (listOfBooks[i].count>=150)
                 {
-                    Console.WriteLine(listOfBooks[i].autor+" "+ listOfBooks[i].count + " "+listOfBooks[i].circulation + " "+ listOfBooks[i].year);
+                    Console.WriteLine(listOfBooks[i].autor+" "+ listOfBooks[i].count + 
+                        " "+listOfBooks[i].circulation + " "+ listOfBooks[i].year);
                 }
                 
             }

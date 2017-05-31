@@ -22,14 +22,16 @@ namespace _20task
                 {
                     if (Convert.ToInt32(ss[2])<=1957)
                     {
-                        Console.WriteLine(textstolb[i]+" "+textstolb[i+1]+ " " + textstolb[i+2]+ " " + textstolb[i+3]+ " " + textstolb[i+4]+ " " + textstolb[i+5]);
+                        Console.WriteLine(textstolb[i]+" "+textstolb[i+1]+ " " 
+                            + textstolb[i+2]+ " " + textstolb[i+3]+ " " + textstolb[i+4]+ " " + textstolb[i+5]);
                     }
                 }
                 else
                 {
                     if (Convert.ToInt32(ss[2]) <= 1952)
                     {
-                        Console.WriteLine(textstolb[i] + " " + textstolb[i + 1] + " " + textstolb[i + 2] + " " + textstolb[i + 3] + " " + textstolb[i + 4] + " " + textstolb[i + 5]);
+                        Console.WriteLine(textstolb[i] + " " + textstolb[i + 1] + " " + 
+                            textstolb[i + 2] + " " + textstolb[i + 3] + " " + textstolb[i + 4] + " " + textstolb[i + 5]);
                     }  
                 }
             //    if (textstolb[i+3]=="ж")
